@@ -15,12 +15,18 @@ Whisper also requires the command-line tool [`ffmpeg`](https://ffmpeg.org/) to b
 ```
 # on Ubuntu or Debian
 sudo apt update && sudo apt install ffmpeg
+sudo apt install portaudio19-dev  # required by pyaudio
 
 # on Arch Linux
 sudo pacman -S ffmpeg
 
 # on MacOS using Homebrew (https://brew.sh/)
 brew install ffmpeg
+
+brew install portaudio
+brew link portaudio 
+brew --prefix portaudio
+
 
 # on Windows using Chocolatey (https://chocolatey.org/)
 choco install ffmpeg
